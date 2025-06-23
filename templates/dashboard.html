@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Telegram AI Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h2>🌡 Risiko: <span id="riskLevel">Analyserer...</span></h2>
+  <button onclick="updateMessages()">🔄 Oppdater</button>
+  <h3>Meldinger</h3>
+  <table id="messageTable"><thead><tr><th>Bruker-ID</th><th>Melding</th><th>Analyse</th><th>Bot?</th></tr></thead><tbody></tbody></table>
+  <h3>⚠️ Varsellogg</h3>
+  <table id="alertTable"><thead><tr><th>Type</th><th>Melding</th><th>Nivå</th><th>Tid</th></tr></thead><tbody></tbody></table>
+  <h3>📈 Varselgraf</h3>
+  <canvas id="alertChart" width="600" height="300"></canvas>
+  <script src="/static/main.js"></script>
+</body>
+</html>

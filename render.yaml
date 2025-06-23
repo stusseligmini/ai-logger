@@ -1,0 +1,11 @@
+
+services:
+  - type: web
+    name: ai-id-logger
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn main:app"
+    plan: free
+    envVars:
+      - key: MONGODB_URI
+        value: mongodb+srv://MiniDexter:A6BmO7%252112@minidexter.ts3npkm.mongodb.net/?retryWrites=true&w=majority&appName=MiniDexter

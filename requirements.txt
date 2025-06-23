@@ -1,0 +1,12 @@
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+motor==3.1.1
+pymongo==4.5.0
+telethon==1.32.1
+python-dotenv==1.0.0
+python-multipart==0.0.6
+jinja2==3.1.2
+aiofiles==23.2.1 
+gunicorn
+APScheduler
+python-dotenv
