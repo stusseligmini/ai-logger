@@ -10,6 +10,3 @@ aiofiles==23.2.1
 gunicorn
 APScheduler
 python-dotenv
-git add requirements.txt
-git commit -m "la til flask"
-git push
