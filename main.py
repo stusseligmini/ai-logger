@@ -1,4 +1,3 @@
-
 from flask import Flask, jsonify, render_template
 from apscheduler.schedulers.background import BackgroundScheduler
 from db.database import db
@@ -49,8 +48,8 @@ def get_logs():
 def dashboard():
     return render_template("dashboard.html")
 
-# 🔁 Kjør Flask (Render bruker miljøvariabel PORT)
-if __name__ == "__main__":
-    import os
-    port = int(os.environ.get("PORT", 8000))
-    app.run(host="0.0.0.0", port=port)
+# 👇 Denne delen er kun for lokal testing – Render bruker gunicorn automatisk
+# if __name__ == "__main__":
+#     import os
+#     port = int(os.environ.get("PORT", 8000))
+#     app.run(host="0.0.0.0", port=port)
